@@ -1,10 +1,10 @@
-import { k } from '../kaboomLoader.js';
-import { spriteList } from '../sprites/spriteList.js';
+import { k } from '../../kaboomLoader.js';
+import { spriteList } from '../../sprites/spriteList.js';
 
 // player object
 export function createPlayer() {
     return k.add([
-        // pos is the position where will create this object
+        // pos is the position where will create this object, the first is a horizontal position and the second is vertical ((0, 0) is the top left point)
         k.pos(0, 0),
         // sprite defines the sprite for this object
         k.sprite(spriteList.player),
