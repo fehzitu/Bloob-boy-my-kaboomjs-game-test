@@ -2,7 +2,7 @@
 import kaboom from 'kaboom';
 
 // kaboom() is to initialize an new canvas
-export let k = kaboom({
+export const k = kaboom({
 	// default screen scale
 	scale: 1.5,
 	// width & height default canvas props

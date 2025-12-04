@@ -1,10 +1,10 @@
-// my custom importations
-import { k } from './config/game.js';
-// import { sprites } from '../config/sprites.js';
-import { player } from './config/player.js'
-import { floor } from './objects/floor.js';
+// my custom imports
+import { k } from './kaboomLoader.js';
+import { createPlayer } from './entities/player.js';
+import { createFloor } from './objects/floor.js';
 
-// { TESTING FIELD }
-k.add(player);
-k.add(floor);
-// { FINISH }
+// player instance object
+const playerInstance = createPlayer();
+
+// floor instance object
+const floorInstance = createFloor();
