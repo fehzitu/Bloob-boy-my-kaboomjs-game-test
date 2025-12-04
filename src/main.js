@@ -1,12 +1,10 @@
-import kaboom from "kaboom"
+// my custom importations
+import { k } from './config/game.js';
+// import { sprites } from '../config/sprites.js';
+import { player } from './config/player.js'
+import { floor } from './objects/floor.js';
 
-const k = kaboom()
-
-k.loadSprite("bean", "sprites/bean.png")
-
-k.add([
-	k.pos(120, 80),
-	k.sprite("bean"),
-])
-
-k.onClick(() => k.addKaboom(k.mousePos()))
+// { TESTING FIELD }
+k.add(player);
+k.add(floor);
+// { FINISH }
