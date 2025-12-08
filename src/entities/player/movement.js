@@ -1,6 +1,6 @@
 import { k } from '../../kaboomLoader.js';
 
-export function addPlayerControls(player, speed) {
+export function addPlayerControls(player) {
     // set camera on player
     player.onUpdate(() => {
         camPos(player.pos.x, player.pos.y);
@@ -8,12 +8,12 @@ export function addPlayerControls(player, speed) {
 
     // move left
     k.onKeyDown("a", () => {
-        player.move(-speed, 0);
+        player.move(-player.speed, 0);
     });
 
     // move right
     k.onKeyDown("d", () => {
-        player.move(speed, 0);
+        player.move(player.speed, 0);
     });
 
     // jump

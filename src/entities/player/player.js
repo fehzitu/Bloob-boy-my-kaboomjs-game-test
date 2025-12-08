@@ -15,6 +15,13 @@ export function createPlayer() {
         // 'player' is a tag to ref a player obj in case of have two of the same
         'player',
         // anchor defines central point of start collision box of an object
-        anchor("center")
+        anchor("center"),
+        // properties can be passed as a object literals
+        {
+            // dead status to verify
+            dead: false,
+            // player speed status
+            speed: 200
+        }
     ]);
 };
