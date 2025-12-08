@@ -13,7 +13,10 @@ export function createEnemy() {
         // its a physical body thats responds to gravity
         k.body(),
         // 'enemy' is a tag to ref a enemy obj in case of have two of the same
+        'enemy',
+        // opacity defines a sprite opacity
         opacity(0.8),
-        'enemy'
+        // color set a base color to the sprite
+        color(BLACK)
     ]);
 };

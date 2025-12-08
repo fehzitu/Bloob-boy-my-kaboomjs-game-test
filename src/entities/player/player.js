@@ -17,6 +17,7 @@ export function createPlayer() {
         // anchor defines central point of start collision box of an object
         anchor("center"),
         // properties can be passed as a object literals
+        health(100),
         {
             // dead status to verify
             dead: false,
