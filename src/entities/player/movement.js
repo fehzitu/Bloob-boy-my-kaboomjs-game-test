@@ -3,7 +3,7 @@ import { k } from '../../kaboomLoader.js';
 export function addPlayerControls(player, speed) {
     // set camera on player
     player.onUpdate(() => {
-        camPos(player.pos.x + (parseInt(player.width / 2)), center().y);
+        camPos(player.pos.x, player.pos.y);
     });
 
     // move left

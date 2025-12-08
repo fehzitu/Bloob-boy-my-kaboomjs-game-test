@@ -13,6 +13,8 @@ export function createPlayer() {
         // its a physical body thats responds to gravity
         k.body(),
         // 'player' is a tag to ref a player obj in case of have two of the same
-        'player'
+        'player',
+        // anchor defines central point of start collision box of an object
+        anchor("center")
     ]);
 };
