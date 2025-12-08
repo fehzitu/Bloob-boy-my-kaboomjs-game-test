@@ -16,6 +16,7 @@ export function createEnemy() {
         'enemy',
         // anchor defines central point of start collision box of an object
         anchor("center"),
+        scale(2),
         // health() defines a instance life points
         health(100),
         // properties can be passed as a object literals

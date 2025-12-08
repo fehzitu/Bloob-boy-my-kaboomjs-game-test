@@ -1,5 +1,4 @@
-// use after to import itens and implements using "k."
-// import { k } from './kaboomLoader.js';
+// my custom imports
 import { createPlayer } from './entities/player/player.js';
 import { addPlayerControls } from './entities/player/movement.js';
 import { createEnemy } from './entities/enemy/enemy.js';
@@ -14,7 +13,7 @@ addPlayerControls(playerInstance);
 // enemy instance object
 const enemyInstance = createEnemy();
 // add ia (auto control) to a enemy instance
-addEnemyIa(enemyInstance, 'simple', playerInstance);
+addEnemyIa(enemyInstance, 'simple');
 
 // floor instance object
 const floorInstance = createFloor();

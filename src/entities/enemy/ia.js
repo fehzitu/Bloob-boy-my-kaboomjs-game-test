@@ -1,6 +1,6 @@
 import { k } from '../../kaboomLoader.js';
 
-export function addEnemyIa(enemy, style, player) {
+export function addEnemyIa(enemy, style) {
     // verify if the enemy exist
     if(!enemy.exists()) return;
     // verify ia movement style
