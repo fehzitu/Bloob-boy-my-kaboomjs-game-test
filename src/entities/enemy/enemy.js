@@ -8,7 +8,7 @@ export function createEnemy() {
         // defines a enemy area to check collision
         k.area(),
         // define a rectangle format
-        k.rect(16, 16),
+        k.rect(32, 32),
         // its a physical body thats responds to gravity
         k.body(),
         // 'enemy' is a tag to ref a enemy obj in case of have two of the same
@@ -26,7 +26,7 @@ export function createEnemy() {
             speed: 100
         },
         // opacity defines a sprite opacity
-        // k.opacity(0.5),
+        k.opacity(0.8),
         // color set a base color to the sprite
         k.color(RED)
     ]);
