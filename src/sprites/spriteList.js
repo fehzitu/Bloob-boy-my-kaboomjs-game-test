@@ -29,5 +29,5 @@ const player = loadSprite('player', 'sprites/player.png', {
 
 
 export const spriteList = {
-    player
+    bean, player
 };
